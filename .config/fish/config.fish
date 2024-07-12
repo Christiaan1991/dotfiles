@@ -34,6 +34,3 @@ thefuck --alias | source
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 alias bat="/usr/local/bat/bat"
-
-# zellij shortcut
-alias w="zellij --layout /home/christiaan/.config/zellij/layout/layout.kdl"

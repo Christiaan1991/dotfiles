@@ -18,10 +18,10 @@ local mux = wezterm.mux
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Catppuccin Macchiato"
+config.color_scheme = "Konsolas"
 
 -- Change the font to Jetbrain Mono
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 
 -- Change padding of the window
 config.window_padding = {

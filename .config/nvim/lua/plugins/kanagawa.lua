@@ -32,7 +32,7 @@ return {
           NeoTreeDirectoryIcon = { fg = "#8ba4b0" },
           NeoTreeFileName = { fg = colors.palette.fujiWhite },
 
-          -- LazyGitBorder = { fg = "none", bg = "none" },
+          LazyGitBorder = { fg = "none", bg = "none" },
           -- CursorLine = { bg = "NONE", underline = true },
         }
       end,
