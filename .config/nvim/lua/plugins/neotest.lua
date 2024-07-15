@@ -63,7 +63,6 @@ return {
                 end
               end
             end)
-            return {}
           end
         end
       end

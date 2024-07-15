@@ -20,12 +20,12 @@ layout {
             command "nvim"
             args "."
         }
-        pane {
-            name "zellij"
-            cwd "/home/christiaan/.config/zellij"
-            command "nvim"
-            args "."
-        }
+        // pane {
+        //     name "zellij"
+        //     cwd "/home/christiaan/.config/zellij"
+        //     command "nvim"
+        //     args "."
+        // }
     }
     tab name="System Process" {
         pane {

@@ -155,6 +155,7 @@ keybinds clear-defaults=true {
 		bind "Alt -" { Resize "Decrease"; }
 		bind "Alt [" { PreviousSwapLayout; }
 		bind "Alt ]" { NextSwapLayout; }
+        bind "Ctrl q" { Quit; }
 	}
 	shared_except "normal" "locked" {
 		bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -191,34 +192,22 @@ plugins {
 
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
-// Options:
-//   - detach (Default)
-//   - quit
-//
 on_force_close "detach"
 
 //  Send a request for a simplified ui (without arrow fonts) to plugins
-//  Options:
-//    - true
-//    - false (Default)
-//
 simplified_ui false
 
-// Choose the path to the default shell that zellij will use for opening new panes
-// Default: $SHELL
-//
-// default_shell "fish"
-
 // Toggle between having pane frames around the panes
-// Options:
-//   - true (default)
-//   - false
-//
 pane_frames true
 
 // The folder in which Zellij will look for themes
-//
 theme_dir "/home/christiaan/.config/zellij/themes"
+
+// The folder in which Zellij will look for layouts
+//
+layout_dir "/home/christiaan/.config/zellij/layout/"
+// Starting layout in layout folder
+default_layout "dev"
 
 // Choose the theme that is specified in the themes section.
 theme "catppuccin-mocha"

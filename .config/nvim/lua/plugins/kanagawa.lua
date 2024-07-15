@@ -30,6 +30,7 @@ return {
 
           NeoTreeDirectoryName = { fg = "#8ba4b0" },
           NeoTreeDirectoryIcon = { fg = "#8ba4b0" },
+          NeoTreeFloatBorder = { fg = colors.palette.winterYellow },
           NeoTreeFileName = { fg = colors.palette.fujiWhite },
 
           LazyGitBorder = { fg = "none", bg = "none" },
