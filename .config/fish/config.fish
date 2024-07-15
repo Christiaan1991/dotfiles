@@ -29,6 +29,8 @@ alias n="nvim ."
 # add git command for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias lazydot='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 thefuck --alias | source
 
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
