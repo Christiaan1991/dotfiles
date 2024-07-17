@@ -1,7 +1,7 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 ui {
     pane_frames {
-        hide_session_name false
+        hide_session_name true
     }
 }
 keybinds clear-defaults=true {
@@ -210,4 +210,4 @@ layout_dir "/home/christiaan/.config/zellij/layout/"
 default_layout "dev"
 
 // Choose the theme that is specified in the themes section.
-theme "catppuccin-mocha"
+theme "catppuccin-frappe"
