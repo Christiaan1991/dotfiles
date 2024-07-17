@@ -54,5 +54,11 @@ config.enable_tab_bar = false
 -- Run Zellij upon startup of Wezterm with the layout in the layout folder of zellij
 config.default_prog = { "zellij" }
 
+-- Maximize window upon startup of wezterm
+wezterm.on("gui-startup", function()
+	local tab, pane, window = mux.spawn_window({})
+	window:gui_window():maximize()
+end)
+
 -- and finally, return the configuration to wezterm
 return config
