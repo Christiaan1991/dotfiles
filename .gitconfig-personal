@@ -1,0 +1,9 @@
+[user]
+	email = lcpost91@gmail.com
+	name = Christiaan Post
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[credentials]
+    helper = store
+[credential]
+	helper = store

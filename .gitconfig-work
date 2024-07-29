@@ -1,0 +1,9 @@
+[user]
+	email = cpost@innius.com
+	name = Christiaan Post
+[url "git@bitbucket.org:"]
+    insteadOf = https://bitbucket.org/
+[credentials]
+    helper = store
+[credential]
+	helper = store

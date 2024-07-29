@@ -3,10 +3,10 @@
 
 # but not these files 
 !.gitignore
-# !.markdownlintrc
 !.gitconfig
+!.gitconfig-personal
+!.gitconfig-work
 !.profile
-# !.tmux.conf
 !.wezterm.lua
 !.stylua.toml
 
@@ -17,7 +17,6 @@
 /.config/*
 # except these directories
 !/.config/nvim/
-# !/.config/kitty/
 !/.config/fish/
 !/.config/wezterm/
 !/.config/zellij/
