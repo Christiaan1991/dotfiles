@@ -13,8 +13,6 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
-local mux = wezterm.mux
-
 -- For example, changing the color scheme:
 -- config.color_scheme = "Konsolas"
 
@@ -70,14 +68,15 @@ config.window_background_image_hsb = {
 -- Disable tab bar
 config.enable_tab_bar = false
 
+-- Size of opening window
+config.initial_cols = 800
+config.initial_rows = 240
+
+-- Size of font
+config.font_size = 10
+
 -- Run Zellij upon startup of Wezterm with the layout in the layout folder of zellij
 config.default_prog = { "zellij" }
-
--- Maximize window upon startup of wezterm
--- wezterm.on("gui-startup", function()
--- 	local tab, pane, window = mux.spawn_window({})
--- 	window:gui_window():maximize()
--- end)
 
 -- and finally, return the configuration to wezterm
 return config
