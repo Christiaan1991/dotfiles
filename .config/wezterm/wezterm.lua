@@ -18,7 +18,7 @@ local config = wezterm.config_builder()
 
 config.colors = {
 	foreground = "#dcd7ba",
-	background = "#1f1f28",
+	background = "#111111",
 
 	cursor_bg = "#c8c093",
 	cursor_fg = "#c8c093",
@@ -36,12 +36,72 @@ config.colors = {
 }
 
 -- Change the font to Jetbrain Mono
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("JetBrains Mono SemiBold")
+--
+-- config.font = wezterm.font("Operator Mono SSm Lig Medium")
+-- config.font_rules = {
+-- 	-- For Bold-but-not-italic text, use this relatively bold font, and override
+-- 	-- its color to a tomato-red color to make bold text really stand out.
+-- 	{
+-- 		intensity = "Bold",
+-- 		italic = false,
+-- 		font = wezterm.font_with_fallback(
+-- 			"Operator Mono SSm Lig",
+-- 			-- Override the color specified by the terminal output and force
+-- 			-- it to be tomato-red.
+-- 			-- The color value you set here can be any CSS color name or
+-- 			-- RGB color string.
+-- 			{ foreground = "tomato" }
+-- 		),
+-- 	},
+--
+-- 	-- Bold-and-italic
+-- 	{
+-- 		intensity = "Bold",
+-- 		italic = true,
+-- 		font = wezterm.font_with_fallback({
+-- 			family = "Operator Mono SSm Lig",
+-- 			italic = true,
+-- 		}),
+-- 	},
+--
+-- 	-- normal-intensity-and-italic
+-- 	{
+-- 		intensity = "Normal",
+-- 		italic = true,
+-- 		font = wezterm.font_with_fallback({
+-- 			family = "Operator Mono SSm Lig",
+-- 			weight = "DemiLight",
+-- 			italic = true,
+-- 		}),
+-- 	},
+--
+-- 	-- half-intensity-and-italic (half-bright or dim); use a lighter weight font
+-- 	{
+-- 		intensity = "Half",
+-- 		italic = true,
+-- 		font = wezterm.font_with_fallback({
+-- 			family = "Operator Mono SSm Lig",
+-- 			weight = "Light",
+-- 			italic = true,
+-- 		}),
+-- 	},
+--
+-- 	-- half-intensity-and-not-italic
+-- 	{
+-- 		intensity = "Half",
+-- 		italic = false,
+-- 		font = wezterm.font_with_fallback({
+-- 			family = "Operator Mono SSm Lig",
+-- 			weight = "Light",
+-- 		}),
+-- 	},
+-- }
 
 -- Change padding of the window
 config.window_padding = {
-	left = 2,
-	right = 2,
+	left = 0,
+	right = 0,
 	top = 0,
 	bottom = 0,
 }
@@ -49,21 +109,8 @@ config.window_padding = {
 -- Remove title bar
 config.window_decorations = "NONE"
 
--- Background image
-config.window_background_image = "/home/christiaan/wallpapers/trumpet-blurred-terminal-wallpapers.jpg"
-
 -- Background settings
-config.window_background_image_hsb = {
-	-- Darken the background image by reducing it to 1/3rd
-	brightness = 0.2,
-
-	-- You can adjust the hue by scaling its value.
-	-- a multiplier of 1.0 leaves the value unchanged.
-	hue = 1.0,
-
-	-- You can adjust the saturation also.
-	saturation = 1.0,
-}
+config.window_background_opacity = 0.6
 
 -- Disable tab bar
 config.enable_tab_bar = false

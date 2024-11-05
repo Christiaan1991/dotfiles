@@ -11,21 +11,24 @@ layout {
     tab name="Workspace" focus=true {
         pane {
             cwd "/home/christiaan/Documents/Innius/bitbucket.org/innius/"
+            // command "nvim"
         }
     }
     tab name="Configuration" {
+        pane split_direction="vertical" {
         pane {
             name "nvim"
             cwd "/home/christiaan/.config/nvim"
             command "nvim"
             args "."
         }
-        // pane {
-        //     name "zellij"
-        //     cwd "/home/christiaan/.config/zellij"
-        //     command "nvim"
-        //     args "."
-        // }
+        pane {
+            name "zellij"
+            cwd "/home/christiaan/.config/zellij"
+            command "nvim"
+            args "."
+        }
+        }
     }
     tab name="Notes" {
         pane {
