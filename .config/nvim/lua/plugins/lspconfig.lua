@@ -56,7 +56,7 @@ return {
               rangeVariableTypes = true,
             },
             analyses = {
-              fieldalignment = true,
+              fieldalignment = false,
               nilness = true,
               unusedparams = true,
               unusedwrite = true,
