@@ -36,3 +36,6 @@ thefuck --alias | source
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 alias bat="/usr/local/bat/bat"
+
+# set JAVA_HOME to null, because it is set by lazy nvim
+set -x JAVA_HOME
