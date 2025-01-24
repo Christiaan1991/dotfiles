@@ -20,6 +20,8 @@
 !/.config/fish/
 !/.config/wezterm/
 !/.config/zellij/
+!/.config/hypr/
+!/.config/kitty/
 
 # ignore fish dir contents
 /.config/fish/*
