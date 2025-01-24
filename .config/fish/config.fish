@@ -22,7 +22,7 @@ alias got="go test ./..."
 alias gt="git tag -l | sort -V | tail"
 
 # yubikey shortcut
-alias y="ykman oath accounts code --single | xclip -selection clip -rmlastnl"
+alias yubi="ykman oath accounts code --single | wl-copy"
 
 # neovim shortcut
 alias n="nvim ."
