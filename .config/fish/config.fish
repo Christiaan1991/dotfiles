@@ -2,6 +2,7 @@ set -x PATH $PATH /usr/local/go/bin ~/go/bin
 set -x TERM xterm-color
 set -x GO111MODULE on
 set -x AWS_REGION us-east-1
+set -x PATH $PATH /usr/local/texlive/2024/bin/x86_64-linux
 
 # docker commands
 alias dup="docker compose up -d"
