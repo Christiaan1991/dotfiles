@@ -28,3 +28,4 @@ fi
 
 # Add go/bin path to PATH
 export PATH="$HOME/go/bin:$PATH"
+. "$HOME/.cargo/env"
