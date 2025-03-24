@@ -17,13 +17,13 @@ layout {
     tab name="Configuration" {
         pane split_direction="vertical" {
         pane {
-            name "nvim"
-            cwd "/home/christiaan/.config/nvim"
+            name "Hyprland Configuration"
+            cwd "/home/christiaan/.config/hypr"
             command "nvim"
             args "."
         }
         pane {
-            name "zellij"
+            name "Zellij Configuration"
             cwd "/home/christiaan/.config/zellij"
             command "nvim"
             args "."
@@ -48,7 +48,7 @@ layout {
     }
     tab name="System Process" {
         pane {
-            command "htop"
+            command "btop"
         }
     }
 }
