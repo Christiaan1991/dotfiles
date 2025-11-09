@@ -8,6 +8,7 @@ This repository contains configurations for:
 
 - **Kitty** - A modern, GPU-accelerated terminal emulator with multiple color themes (Catppuccin, Kanagawa variants)
 - **Neovim** - A powerful text editor for coding using LazyVim with additional plugins for development, testing, and Git integration
+- **OpenCode** - AI-powered coding assistant with custom agents for documentation writing and code review
 - **Starship** - A fast, customizable command-line prompt that shows useful information like the current directory, Git branch, and programming language versions
 - **Zellij** - A terminal multiplexer that lets you split your terminal into multiple panes and tabs, includes a custom dev layout
 - **Zsh** - A shell (command-line interface) with advanced features and custom settings
@@ -51,6 +52,16 @@ dotfiles/
 │       ├── lazyvim.json            # LazyVim configuration
 │       └── stylua.toml             # Lua code formatter settings
 │
+├── opencode/                       # OpenCode AI assistant
+│   └── .config/opencode/
+│       ├── opencode.json           # Main configuration (theme, model)
+│       ├── package.json            # Plugin dependencies
+│       ├── .gitignore              # Excludes node_modules
+│       ├── agent/                  # Custom agent configurations
+│       │   ├── documentation-writer.md  # Documentation writing agent
+│       │   └── review.md           # Code review agent
+│       └── command/                # Custom slash commands
+│
 ├── starship/                       # Starship prompt
 │   └── .config/
 │       └── starship.toml           # Prompt customization
@@ -76,6 +87,7 @@ dotfiles/
 - [GNU Stow](https://www.gnu.org/software/stow/) - For managing dotfiles
 - [Neovim](https://neovim.io/) - For nvim config
 - [Kitty](https://sw.kovidgoyal.net/kitty/) - For kitty config
+- [OpenCode](https://opencode.ai/) - For OpenCode AI assistant
 - [Starship](https://starship.rs/) - For starship prompt
 - [Zellij](https://zellij.dev/) - For zellij config
 - [Zsh](https://www.zsh.org/) - For zsh config
@@ -116,6 +128,7 @@ sudo pacman -S stow
    ```bash
    stow kitty    # Install kitty config
    stow nvim     # Install nvim config
+   stow opencode # Install OpenCode config
    stow zsh      # Install zsh config
    stow starship # Install starship config
    stow zellij   # Install zellij config
@@ -130,5 +143,5 @@ sudo pacman -S stow
 
 To remove configurations:
 ```bash
-stow -D kitty nvim zsh starship zellij
+stow -D kitty nvim opencode zsh starship zellij
 ```
