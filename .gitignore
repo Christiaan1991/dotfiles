@@ -6,14 +6,6 @@
 
 # Neovim runtime files
 nvim/.config/nvim/lazy-lock.json
-nvim/.config/nvim/.repro/
-nvim/.config/nvim/data/
-nvim/.config/nvim/*.log
-nvim/.config/nvim/tt.*
-nvim/.config/nvim/.tests
-nvim/.config/nvim/doc/tags
-nvim/.config/nvim/debug
-nvim/.config/nvim/foo.*
 
 # System files
 .Trash-*/
