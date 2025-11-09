@@ -8,9 +8,12 @@ return {
     },
     config = function()
       vim.g.opencode_opts = {
-        terminal = {
-          win = {
-            width = 100,
+        provider = {
+          name = "snacks",
+          snacks = {
+            win = {
+              width = 100,
+            },
           },
         },
       }
