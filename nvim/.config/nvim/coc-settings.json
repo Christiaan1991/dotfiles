@@ -1,0 +1,7 @@
+{
+    "tsserver.enable": true,
+    "tsserver.formatOnType": true,
+    "tsserver.log": "verbose",
+    "javascript.suggestionActions.enabled": true,
+    "typescript.suggestionActions.enabled": true
+}
