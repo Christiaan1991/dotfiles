@@ -5,7 +5,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # Plugins
 plugins=(
   aws
+  azure
   git
+  golang
   zsh-autosuggestions
   zsh-syntax-highlighting
   z

@@ -1,4 +1,4 @@
-# Dotfiles
+# 🧩 Dotfiles
 
 My personal configuration files for macOS managed with GNU Stow.
 
@@ -13,7 +13,7 @@ This repository contains configurations for:
 - **Zellij** - A terminal multiplexer that lets you split your terminal into multiple panes and tabs, includes a custom dev layout
 - **Zsh** - A shell (command-line interface) with advanced features and custom settings
 
-## Directory Structure
+## 📁 Directory Structure
 
 ```
 dotfiles/
