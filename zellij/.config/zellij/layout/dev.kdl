@@ -1,11 +1,10 @@
 layout {
     default_tab_template {
-        children
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
-                // format_left   "{mode} #[fg=#89B4FA,bold]{session}"
+                format_left   "{mode}"
                 format_center "{tabs}"
-                format_right  "{command_git_branch} {datetime}"
+                format_right  "{datetime}"
                 format_space  ""
 
                 border_enabled  "false"
@@ -15,22 +14,35 @@ layout {
 
                 hide_frame_for_single_pane "false"
 
-                mode_normal  "#[bg=blue] "
-                mode_tmux    "#[bg=#ffc387] "
+                mode_normal         "#[fg=#6C7086,bold] {name} "
+                mode_locked         "#[fg=#f38ba8,bold] {name} "
+                mode_resize         "#[fg=#f5e0dc,bold] {name} "
+                mode_pane           "#[fg=#f5c2e7,bold] {name} "
+                mode_tab            "#[fg=#a6e3a1,bold] {name} "
+                mode_scroll         "#[fg=white,bold] {name} "
+                mode_enter_search   "#[fg=#94e2d5,bold] {name} "
+                mode_search         "#[fg=#89B4FA,bold] {name} "
+                mode_rename_tab     "#[fg=#b4befe,bold] {name} "
+                mode_rename_pane    "#[fg=#89dceb,bold] {name} "
+                mode_session        "#[fg=#89B4FA,bold] {name} "
+                mode_move           "#[fg=#89B4FA,bold] {name} "
+                mode_prompt         "#[fg=#89B4FA,bold] {name} "
+                mode_tmux           "#[fg=#fab387,bold] {name} "
 
                 tab_normal   "#[fg=#6C7086] {name} "
                 tab_active   "#[fg=#9399B2,bold,italic] {name} "
 
-                command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-                command_git_branch_format      "#[fg=blue] {stdout} "
-                command_git_branch_interval    "10"
-                command_git_branch_rendermode  "static"
+                // command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+                // command_git_branch_format      "#[fg=blue] {stdout} "
+                // command_git_branch_interval    "10"
+                // command_git_branch_rendermode  "static"
 
                 datetime        "#[fg=#6C7086,bold] {format} "
                 datetime_format "%A, %d %b %Y %H:%M"
                 datetime_timezone "Europe/Berlin"
             }
         }
+        children
     }
     tab name="Workspace" focus=true {
         pane {
