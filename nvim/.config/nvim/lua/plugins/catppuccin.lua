@@ -115,14 +115,14 @@ return {
           TelescopeNormal = { bg = "NONE" },
           TelescopeBorder = { bg = "NONE" },
 
-          -- Starting screen customization
-          SnacksDashBoardTitle = { fg = "#27b427" },
-          SnacksDashBoardHeader = { fg = "#27b427" },
-          SnacksDashBoardFooter = { fg = "#27b427" },
-          SnacksDashBoardDesc = { fg = "#1b671b" },
-          SnacksDashBoardFile = { fg = "#1b671b" },
-          SnacksDashBoardIcon = { fg = "#1b671b" },
-          SnacksDashBoardSpecial = { fg = "#1b671b" },
+          -- -- Starting screen customization
+          -- SnacksDashBoardTitle = { fg = "#27b427" },
+          -- SnacksDashBoardHeader = { fg = "#27b427" },
+          -- SnacksDashBoardFooter = { fg = "#27b427" },
+          -- SnacksDashBoardDesc = { fg = "#1b671b" },
+          -- SnacksDashBoardFile = { fg = "#1b671b" },
+          -- SnacksDashBoardIcon = { fg = "#1b671b" },
+          -- SnacksDashBoardSpecial = { fg = "#1b671b" },
         }
       end,
     },
