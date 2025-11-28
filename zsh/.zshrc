@@ -81,3 +81,6 @@ eval "$(starship init zsh)"
 
 # opencode
 export PATH=/Users/chris/.opencode/bin:$PATH
+
+# dotnet
+export PATH=$PATH:/usr/local/share/dotnet
