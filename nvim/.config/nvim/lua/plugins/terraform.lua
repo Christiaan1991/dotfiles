@@ -100,21 +100,4 @@ return {
       vim.g.terraform_align = 1
     end,
   },
-
-  -- Which-key mappings for Terraform/OpenTofu
-  {
-    "folke/which-key.nvim",
-    optional = true,
-    opts = {
-      spec = {
-        { "<leader>t", group = "terraform/opentofu", icon = "󱁢" },
-        { "<leader>tf", "<cmd>!tofu fmt %<cr>", desc = "[f]ormat current file", icon = "󰉼" },
-        { "<leader>tv", "<cmd>!tofu validate<cr>", desc = "[v]alidate configuration", icon = "✓" },
-        { "<leader>tp", "<cmd>!tofu plan<cr>", desc = "[p]lan changes", icon = "📋" },
-        { "<leader>ta", "<cmd>!tofu apply<cr>", desc = "[a]pply changes", icon = "🚀" },
-        { "<leader>ti", "<cmd>!tofu init<cr>", desc = "[i]nitialize", icon = "🔧" },
-        { "<leader>td", "<cmd>!tofu destroy<cr>", desc = "[d]estroy resources", icon = "💥" },
-      },
-    },
-  },
 }
