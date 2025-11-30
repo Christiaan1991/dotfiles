@@ -3,4 +3,26 @@
     "theme": "catppuccin",
     "model": "anthropic/claude-sonnet-4-20250514",
     "autoupdate": true,
+    "mcp": {
+        "azure-devops": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@azure-devops/mcp",
+                "teamnavara",
+                "-d",
+                "core",
+                "work",
+                "repositories",
+                "pipelines",
+            ],
+            "environment": {
+                "AZURE_DEVOPS_ORG": "teamnavara",
+                "AZURE_DEVOPS_PAT": "${AZURE_DEVOPS_PAT}"
+            },
+            "enabled": true,
+            "timeout": 10000,
+        }
+    }
 }
