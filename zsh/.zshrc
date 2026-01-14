@@ -82,9 +82,10 @@ eval "$(starship init zsh)"
 # opencode
 export PATH=/Users/chris/.opencode/bin:$PATH
 
-# Load OpenCode secrets (Azure DevOps PAT)
+# Load OpenCode secrets
 if [ -f "$HOME/.config/opencode/secrets.json" ]; then
     export AZURE_DEVOPS_PAT=$(grep -o '"AZURE_DEVOPS_PAT":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
+    export FIGMA_API_KEY=$(grep -o '"FIGMA_API_KEY":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
 fi
 
 # dotnet

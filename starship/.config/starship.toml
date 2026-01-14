@@ -45,7 +45,7 @@ symbol = ' '
 
 [azure]
 disabled = false
-format = 'on [$symbol($subscription)]($style) '
+format = ' on [$symbol($subscription)]($style) '
 symbol = '󰠅 '
 style = 'blue bold'
 
