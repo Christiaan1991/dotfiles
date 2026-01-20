@@ -91,3 +91,10 @@ fi
 
 # dotnet
 export PATH=$PATH:/usr/local/share/dotnet
+
+# bun completions
+[ -s "/Users/chris/.bun/_bun" ] && source "/Users/chris/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

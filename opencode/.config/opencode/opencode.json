@@ -1,77 +1,77 @@
 {
-    "$schema": "https://opencode.ai/config.json",
-    "theme": "catppuccin",
-    "model": "github-copilot/claude-sonnet-4.5",
-    "autoupdate": true,
-    "mcp": {
-        "azure-devops": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@azure-devops/mcp",
-                "teamnavara",
-                "-d",
-                "core",
-                "work",
-                "repositories",
-                "pipelines"
-            ],
-            "environment": {
-                "AZURE_DEVOPS_ORG": "teamnavara",
-                "AZURE_DEVOPS_PAT": "${AZURE_DEVOPS_PAT}"
-            },
-            "enabled": true,
-            "timeout": 10000
-        },
-        "Framelink Figma MCP": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "figma-developer-mcp",
-                "--stdio"
-            ],
-            "environment": {
-                "FIGMA_API_KEY": "{env:FIGMA_API_KEY}"
-            },
-            "enabled": true
-        },
-        "filesystem": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@modelcontextprotocol/server-filesystem",
-                "/Users/chris/dotfiles"
-            ],
-            "enabled": true,
-            "timeout": 5000
-        },
-        "git": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@modelcontextprotocol/server-git",
-                "--repository",
-                "/Users/chris/dotfiles"
-            ],
-            "enabled": true,
-            "timeout": 5000
-        },
-        "github": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@modelcontextprotocol/server-github"
-            ],
-            "environment": {
-                "GITHUB_PERSONAL_ACCESS_TOKEN": "{env.GITHUB_TOKEN}"
-            },
-            "enabled": true,
-            "timeout": 10000
-        }
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "catppuccin",
+  "model": "github-copilot/claude-sonnet-4.5",
+  "autoupdate": true,
+  "mcp": {
+    "azure-devops": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@azure-devops/mcp",
+        "teamnavara",
+        "-d",
+        "core",
+        "work",
+        "repositories",
+        "pipelines"
+      ],
+      "environment": {
+        "AZURE_DEVOPS_ORG": "teamnavara",
+        "AZURE_DEVOPS_PAT": "${AZURE_DEVOPS_PAT}"
+      },
+      "enabled": true,
+      "timeout": 10000
+    },
+    "Framelink Figma MCP": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "figma-developer-mcp",
+        "--stdio"
+      ],
+      "environment": {
+        "FIGMA_API_KEY": "{env:FIGMA_API_KEY}"
+      },
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/chris/dotfiles"
+      ],
+      "enabled": true,
+      "timeout": 5000
+    },
+    "git": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "/Users/chris/dotfiles"
+      ],
+      "enabled": true,
+      "timeout": 5000
+    },
+    "github": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env.GITHUB_TOKEN}"
+      },
+      "enabled": true,
+      "timeout": 10000
     }
+  }
 }
