@@ -30,10 +30,48 @@
                 "npx",
                 "-y",
                 "figma-developer-mcp",
-                "--figma-api-key=${FIGMA_API_KEY}",
                 "--stdio"
             ],
-            "enabled": true,
+            "environment": {
+                "FIGMA_API_KEY": "{env:FIGMA_API_KEY}"
+            },
+            "enabled": true
         },
+        "filesystem": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/Users/chris/dotfiles"
+            ],
+            "enabled": true,
+            "timeout": 5000
+        },
+        "git": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-git",
+                "--repository",
+                "/Users/chris/dotfiles"
+            ],
+            "enabled": true,
+            "timeout": 5000
+        },
+        "github": {
+            "type": "local",
+            "command": [
+                "npx",
+                "-y",
+                "@modelcontextprotocol/server-github"
+            ],
+            "environment": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "{env.GITHUB_TOKEN}"
+            },
+            "enabled": true,
+            "timeout": 10000
+        }
     }
 }
