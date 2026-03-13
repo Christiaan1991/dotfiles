@@ -86,7 +86,6 @@ export PATH=/Users/chris/.opencode/bin:$PATH
 if [ -f "$HOME/.config/opencode/secrets.json" ]; then
     export AZURE_DEVOPS_PAT=$(grep -o '"AZURE_DEVOPS_PAT":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
     export FIGMA_API_KEY=$(grep -o '"FIGMA_API_KEY":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
-    export GITHUB_TOKEN=$(grep -o '"GITHUB_TOKEN":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
 fi
 
 # dotnet

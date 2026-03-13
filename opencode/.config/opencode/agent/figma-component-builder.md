@@ -40,6 +40,7 @@ Expert at translating Figma designs into production-ready React components. Mast
 - Implement responsive layouts matching Figma designs
 - Generate CSS Modules, Tailwind classes, or styled-components from Figma styles
 - Create reusable hooks for component logic
+- Make use of existing components as much as possible
 
 ### Design System Integration
 - Map Figma design tokens to CSS custom properties or Tailwind config

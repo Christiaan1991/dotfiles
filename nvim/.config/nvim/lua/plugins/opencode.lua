@@ -7,16 +7,7 @@ return {
       { "folke/snacks.nvim", opts = { input = {}, picker = {} } },
     },
     config = function()
-      vim.g.opencode_opts = {
-        provider = {
-          name = "snacks",
-          snacks = {
-            win = {
-              width = 100,
-            },
-          },
-        },
-      }
+      vim.g.opencode_opts = {}
 
       -- Required for `vim.g.opencode_opts.auto_reload`.
       vim.o.autoread = true
