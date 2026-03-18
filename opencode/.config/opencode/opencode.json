@@ -47,17 +47,15 @@
             "enabled": true,
             "timeout": 5000
         },
-        "git": {
+        "context-mode": {
             "type": "local",
             "command": [
-                "npx",
-                "-y",
-                "@modelcontextprotocol/server-git",
-                "--repository",
-                "/Users/chris/dotfiles"
+                "context-mode"
             ],
             "enabled": true,
-            "timeout": 5000
-        },
-    }
+        }
+    },
+    "plugin": [
+        "context-mode"
+    ]
 }
