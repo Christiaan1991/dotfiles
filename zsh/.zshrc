@@ -9,6 +9,7 @@ plugins=(
   golang
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-vi-mode
   z
 )
 
