@@ -42,6 +42,7 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+alias n="nvim"
 
 # awslogin shortcut
 alias awslogin="source ~/scripts/awslogin"

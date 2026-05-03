@@ -1,61 +1,68 @@
 {
-    "$schema": "https://opencode.ai/config.json",
-    "model": "opencode/mimo-v2-omni-free",
-    "autoupdate": true,
-    "mcp": {
-        "azure-devops": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@azure-devops/mcp",
-                "teamnavara",
-                "-d",
-                "core",
-                "work",
-                "repositories",
-                "pipelines"
-            ],
-            "environment": {
-                "AZURE_DEVOPS_ORG": "teamnavara",
-                "AZURE_DEVOPS_PAT": "${AZURE_DEVOPS_PAT}"
-            },
-            "enabled": true,
-            "timeout": 10000
-        },
-        "Framelink Figma MCP": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "figma-developer-mcp",
-                "--stdio"
-            ],
-            "environment": {
-                "FIGMA_API_KEY": "{env:FIGMA_API_KEY}"
-            },
-            "enabled": true
-        },
-        "filesystem": {
-            "type": "local",
-            "command": [
-                "npx",
-                "-y",
-                "@modelcontextprotocol/server-filesystem",
-                "/Users/chris/dotfiles"
-            ],
-            "enabled": true,
-            "timeout": 5000
-        },
-        "context-mode": {
-            "type": "local",
-            "command": [
-                "context-mode"
-            ],
-            "enabled": true,
-        }
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/mimo-v2-omni-free",
+  "autoupdate": true,
+  "instructions": [
+    "docs/coding-standards.md"
+  ],
+  "mcp": {
+    "azure-devops": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@azure-devops/mcp",
+        "nvpwn",
+        "-d",
+        "core",
+        "work",
+        "work-items",
+        "repositories",
+        "pipelines"
+      ],
+      "environment": {
+        "AZURE_DEVOPS_ORG": "nvpwn",
+        "AZURE_DEVOPS_PAT": "${AZURE_DEVOPS_PAT}"
+      },
+      "enabled": true,
+      "timeout": 10000
     },
-    "plugin": [
-        "context-mode"
-    ]
+    "afas": {
+      "type": "local",
+      "command": [
+        "bash",
+        "-c",
+        "cd /Users/chris/Documents/NAVARA/repos/afas-client && npm run mcp:afas"
+      ],
+      "enabled": true
+    },
+    "Framelink Figma MCP": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "figma-developer-mcp",
+        "--stdio"
+      ],
+      "environment": {
+        "FIGMA_API_KEY": "{env:FIGMA_API_KEY}"
+      },
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/chris/dotfiles"
+      ],
+      "enabled": true,
+      "timeout": 5000
+    }
+  },
+  "plugin": [
+    "opencode-skill-creator",
+    "oh-my-openagent@latest"
+  ]
 }
