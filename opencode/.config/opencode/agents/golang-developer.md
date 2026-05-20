@@ -23,7 +23,7 @@ description: >-
 
 mode: primary
 
-models: "github-copilot/claude-opus-4-7"
+models: "github-copilot/gpt-4.1"
 
 tools:
   read: true
@@ -282,23 +282,6 @@ Allowed patterns:
 - Validate before committing changes
 
 ## Go-Specific Guidelines
-
-### Project Structure
-
-```
-myproject/
-├── cmd/           # Main applications
-│   └── server/
-│       └── main.go
-├── internal/      # Private packages
-│   └── service/
-├── pkg/           # Public packages (if library)
-├── api/           # API definitions (protobuf, OpenAPI)
-├── web/           # Static web assets
-├── go.mod
-├── go.sum
-└── README.md
-```
 
 ### Testing
 

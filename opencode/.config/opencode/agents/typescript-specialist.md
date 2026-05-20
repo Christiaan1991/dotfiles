@@ -1,11 +1,9 @@
 ---
 description: TypeScript specialist for type safety, interface design, generic patterns, and TSConfig configuration. Use when working with TypeScript code, fixing type errors, designing interfaces, or configuring TSConfig.
 
-mode: subagent
+mode: primary
 
-model: "github-copilot/claude-opus-4-7"
-
-variant: "max"
+model: "github-copilot/gpt-4.1"
 
 tools:
   {
@@ -19,20 +17,6 @@ tools:
     todowrite: true,
     todoread: true,
   }
-
-# permission:
-#   bash:
-#     "*": ask
-#     "npx tsc*": allow
-#     "npx tsc --noEmit": allow
-#     "npx prettier*": allow
-#     "npx eslint*": allow
-#     "cat *": allow
-#     "ls *": allow
-#     "rm *": deny
-#     "git *": ask
-#   edit: ask
-#   write: ask
 
 maxSteps: 30
 

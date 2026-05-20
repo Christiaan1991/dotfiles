@@ -152,19 +152,22 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
+[docker_context]
+format = 'via [🐋 $context](blue bold)'
+
 [aws]
 format = ' on [$symbol $profile ]($style)'
 style = 'peach bold'
 symbol = " "
 
 [nodejs]
-format = 'via [$symbol $version]($style)'
+format = ' [$symbol$version]($style)'
 style = 'green bold'
 symbol = ' '
 disabled = false
 
 [golang]
-format = 'via [$symbol $version]($style)'
+format = ' [$symbol$version]($style)'
 style = 'sky bold'
 symbol = ' '
 
@@ -177,7 +180,6 @@ disabled = false
 format = ' on [$symbol($subscription)]($style) '
 symbol = '󰠅 '
 style = 'blue bold'
-subscription_aliases = { "N.V. PWN Waterleidingbedrijf Noord-Holland" = "PWN"}
 
 [dotnet]
 disabled = true

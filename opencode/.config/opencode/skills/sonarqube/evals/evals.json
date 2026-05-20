@@ -1,0 +1,23 @@
+{
+  "skill_name": "sonarqube",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "hey can you check the code quality for this project? i think we might have some issues that need fixing. just run through sonarqube and let me know what needs attention",
+      "expected_output": "Skill should: 1) Check SonarQube health, 2) Auto-discover project from repo name, 3) Retrieve metrics and compare to thresholds, 4) Present dashboard showing current vs target metrics, 5) Identify priority areas needing work, 6) Propose specific fixes with effort estimates, 7) Wait for approval before applying any changes",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "our test coverage dropped below 80% after the last merge. can you analyze what areas need more tests and help me get us back above the threshold? this is for the backend service",
+      "expected_output": "Skill should: 1) Check health, 2) Find backend project, 3) Get coverage metrics, 4) Identify which files/components have low coverage, 5) Recommend specific test cases to add, 6) Explain what behaviors need testing, 7) After approval, create test files following existing patterns, 8) Run tests to verify they work",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm seeing some security hotspots flagged in sonarqube for the authentication module. Can you investigate those and tell me if they're real issues or false positives? If they're real, let's fix them ASAP",
+      "expected_output": "Skill should: 1) Check health, 2) Find project, 3) Query security hotspots specifically, 4) Analyze each hotspot in the auth module, 5) Determine severity and validity, 6) Explain which are real vs false positive, 7) For real issues, propose fixes with security rationale, 8) Wait for approval, 9) Apply fixes and verify with tests",
+      "files": []
+    }
+  ]
+}

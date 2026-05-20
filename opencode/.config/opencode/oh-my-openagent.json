@@ -2,75 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
-      "model": "opencode/big-pickle",
-      "variant": "max",
+      "model": "github-copilot/claude-sonnet-4.5",
       "fallback_models": [
         {
-          "model": "github-copilot/claude-opus-4-7",
+          "model": "github-copilot/claude-opus-4.6",
           "variant": "max"
-        },
-        {
-          "model": "github-copilot/kimi-k2.5"
-        },
-        {
-          "model": "github-copilot/gpt-5.5",
-          "variant": "medium"
-        },
-        {
-          "model": "opencode/gpt-5.5",
-          "variant": "medium"
-        },
-        {
-          "model": "opencode/glm-5"
-        },
-        {
-          "model": "opencode/big-pickle"
         }
       ]
     },
     "hephaestus": {
-      "model": "github-copilot/gpt-5.5",
-      "variant": "medium",
-      "fallback_models": [
-        {
-          "model": "opencode/gpt-5.5",
-          "variant": "medium"
-        }
-      ]
+      "model": "github-copilot/claude-sonnet-4.5",
+      "variant": "medium"
     },
     "oracle": {
-      "model": "github-copilot/gpt-5.5",
-      "variant": "high",
-      "fallback_models": [
-        {
-          "model": "opencode/gpt-5.5",
-          "variant": "high"
-        },
-        {
-          "model": "github-copilot/gemini-3.1-pro-preview",
-          "variant": "high"
-        },
-        {
-          "model": "opencode/gemini-3.1-pro",
-          "variant": "high"
-        },
-        {
-          "model": "github-copilot/claude-opus-4.7",
-          "variant": "max"
-        },
-        {
-          "model": "opencode/claude-opus-4-7",
-          "variant": "max"
-        }
-      ]
+      "model": "github-copilot/claude-opus-4.6",
+      "variant": "high"
     },
     "explore": {
-      "model": "github-copilot/claude-haiku-4-5",
-      "fallback_models": [
-        {
-          "model": "github-copilot/gpt-5.4-nano"
-        }
-      ]
+      "model": "github-copilot/claude-haiku-4.5"
     },
     "multimodal-looker": {
       "model": "github-copilot/gpt-5.5",
@@ -85,26 +34,12 @@
       ]
     },
     "prometheus": {
-      "model": "github-copilot/claude-opus-4.7",
+      "model": "github-copilot/claude-opus-4.6",
       "variant": "max",
       "fallback_models": [
         {
-          "model": "opencode/claude-opus-4-7",
-          "variant": "max"
-        },
-        {
-          "model": "github-copilot/gpt-5.5",
-          "variant": "high"
-        },
-        {
-          "model": "opencode/gpt-5.5",
-          "variant": "high"
-        },
-        {
-          "model": "github-copilot/gemini-3.1-pro-preview"
-        },
-        {
-          "model": "opencode/gemini-3.1-pro"
+          "model": "opencode/claude-opus-4-6",
+          "variant": "medium"
         }
       ]
     },
@@ -113,15 +48,7 @@
       "variant": "max",
       "fallback_models": [
         {
-          "model": "opencode/claude-opus-4-7",
-          "variant": "max"
-        },
-        {
           "model": "github-copilot/gpt-5.5",
-          "variant": "high"
-        },
-        {
-          "model": "opencode/gpt-5.5",
           "variant": "high"
         }
       ]
