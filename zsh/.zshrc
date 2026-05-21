@@ -54,11 +54,26 @@ eval "$(starship init zsh)"
 # opencode
 export PATH=/Users/chris/.opencode/bin:$PATH
 
-# Load OpenCode secrets
+# set GOPRIVATE for lib access
+export GOPRIVATE=github.com/pwc-nl-taxtechnology-ondemand,github.com/pwc-nl-taxtechnology-shared-org
+
+# haas setup
+[ -s "/Users/cpost003/.haas/haas.sh" ] && source "/Users/cpost003/.haas/haas.sh"
+
+# Load OpenCode secrets, use as example
 if [ -f "$HOME/.config/opencode/secrets.json" ]; then
-    export AZURE_DEVOPS_PAT=$(grep -o '"AZURE_DEVOPS_PAT":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
-    export FIGMA_API_KEY=$(grep -o '"FIGMA_API_KEY":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
+    export SONARQUBE_TOKEN=$(grep -o '"SONARQUBE_TOKEN":[^,}]*' "$HOME/.config/opencode/secrets.json" | cut -d'"' -f4)
 fi
+
+# nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # dotnet
 export PATH=$PATH:/usr/local/share/dotnet
+
+# Added by sonarqube-cli installer
+export PATH="$HOME/.local/share/sonarqube-cli/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
