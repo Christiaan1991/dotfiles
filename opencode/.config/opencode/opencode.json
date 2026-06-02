@@ -2,14 +2,24 @@
   "$schema": "https://opencode.ai/config.json",
   "model": "github-copilot/GPT-4.1",
   "autoupdate": true,
-  "instructions": ["docs/coding-standards.md", "docs/opencode-standards.md"],
+  "instructions": [
+    "docs/coding-review.md",
+    "docs/coding-style.md",
+    "docs/development-workflow.md",
+    "docs/git-workflow.md",
+    "docs/hooks.md",
+    "docs/patterns.md",
+    "docs/performance.md",
+    "docs/security.md",
+    "docs/testing.md"
+  ],
   "mcp": {
     "afas": {
       "type": "local",
       "command": [
         "bash",
         "-c",
-        "cd /Users/chris/Documents/NAVARA/repos/afas-client && npm run mcp:afas"
+        "cd $HOME/Documents/NAVARA/repos/afas-client && npm run mcp:afas"
       ],
       "enabled": true
     },
@@ -19,7 +29,7 @@
         "npx",
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/Users/chris/dotfiles"
+        "$HOME/dotfiles"
       ],
       "enabled": true,
       "timeout": 5000
@@ -47,5 +57,5 @@
       "timeout": 10000
     }
   },
-  "plugin": ["opencode-skill-creator", "oh-my-openagent@latest"]
+  "plugin": ["opencode-skill-creator", "oh-my-openagent@latest", "superpowers@git+https://github.com/obra/superpowers.git"]
 }

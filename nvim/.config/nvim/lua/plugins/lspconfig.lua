@@ -16,6 +16,31 @@ return {
           },
         },
       },
+      ruff = {
+        init_options = {
+          settings = {
+            -- Pass the settings exactly as Ruff's linter natively expects them
+            lint = {
+              ignore = {
+                "ASYNC101",
+                "E501",
+                "PLW0717",
+                "PTH202",
+                "D102",
+                "ANN001",
+                "ARG001",
+                "PTH108",
+                "ANN201",
+                "ANN202",
+                "ANN204",
+                "E306",
+                "ASYNC240",
+                "ASYNC109",
+              },
+            },
+          },
+        },
+      },
     },
   },
 }

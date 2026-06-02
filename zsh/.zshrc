@@ -39,6 +39,9 @@ setopt appendhistory
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH=/usr/local/share/npm/bin:$PATH
 
+# Zellij configuration
+eval "$(zellij setup --generate-auto-start zsh)"
+
 # aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -48,7 +51,6 @@ alias n="nvim"
 alias awslogin="source ~/scripts/awslogin"
 
 # starship Set-up
-eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(starship init zsh)"
 
 # opencode

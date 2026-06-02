@@ -13,6 +13,7 @@ layout {
                 border_position "left"
 
                 hide_frame_for_single_pane "false"
+                // hide_frame_except_for_search "false"
 
                 mode_normal         "#[fg=#6C7086,bold] {name} "
                 mode_locked         "#[fg=#f38ba8,bold] {name} "
@@ -32,11 +33,6 @@ layout {
                 tab_normal   "#[fg=#6C7086] {name} "
                 tab_active   "#[fg=#9399B2,bold,italic] {name} "
 
-                // command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-                // command_git_branch_format      "#[fg=blue] {stdout} "
-                // command_git_branch_interval    "10"
-                // command_git_branch_rendermode  "static"
-
                 datetime        "#[fg=#6C7086,bold] {format} "
                 datetime_format "%A, %d %b %Y %H:%M"
                 datetime_timezone "Europe/Berlin"
@@ -49,10 +45,10 @@ layout {
             cwd "/Users/chris/Documents/NAVARA/projects/"
         }
     }
-    tab name="Notes" {
+    tab name="Dotfiles" {
         pane {
             name "Notes"
-            cwd "/Users/chris/Documents/NAVARA/notes/"
+            cwd "~/dotfiles/"
             command "nvim"
             args "."
         }

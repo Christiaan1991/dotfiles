@@ -138,5 +138,23 @@ themes {
         base 30 30 46
         mantle 24 24 37
         crust 17 17 27
+
+        frame_selected {
+            base 137 180 250
+            background 0
+            emphasis_0 0
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+
+        frame_unselected {
+            base 69 71 90
+            background 0
+            emphasis_0 0
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
     }
 }

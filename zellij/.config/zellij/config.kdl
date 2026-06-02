@@ -249,9 +249,6 @@ keybinds clear-defaults=true {
 }
 
 plugins {
-	// tab-bar { path "tab-bar"; }
-	// status-bar { path "status-bar"; }
-	// strider { path "strider"; }
 	compact-bar { path "compact-bar"; }
 }
 
@@ -262,10 +259,6 @@ ui {
     }
 }
 
-// Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
-// eg. when terminal window with an active zellij session is closed
-// on_force_close "detach"
-
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 simplified_ui false
 
@@ -273,10 +266,10 @@ simplified_ui false
 pane_frames false
 
 // The folder in which Zellij will look for themes
-theme_dir "/Users/chris/.config/zellij/themes"
+theme_dir "/Users/cpost003/.config/zellij/themes"
 
 // The folder in which Zellij will look for layouts
-layout_dir "/Users/chris/.config/zellij/layout"
+layout_dir "/Users/cpost003/.config/zellij/layout"
 // Starting layout in layout folder
 default_layout "dev"
 
